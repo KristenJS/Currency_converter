@@ -1,13 +1,135 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(242, 245, 248);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  padding: 1rem 20rem;
+  display: flex;
+  gap: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 2px 2px 8px rgb(214, 214, 214);
+  text-align: center;
+  color: rgb(27, 64, 103);
+}
+
+.title {
+  height: 20rem;
+  background-color: rgb(34, 83, 134);
+  text-align: center;
+  padding-top: 1.5rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(200, 200, 200);
+}
+
+h3 {
+  margin: 0.5rem;
+  color: rgb(27, 64, 103);
+}
+
+h4 {
+  margin: 0rem 0.5rem 1rem;
+  color: rgb(27, 64, 103);
+}
+
+.main {
+  margin: -15rem 20rem;
+  padding: 1.2rem;
+  min-height: 35vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.main_currency {
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_equals {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(27, 64, 103);
+}
+
+.currency_block {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 3px 8px rgb(200, 200, 200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 20rem;
+  height: 5rem;
+}
+
+.main_img {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 10rem;
+  margin-top: 2.5rem;
+}
+
+.input {
+  font-size: 1rem;
+  color: rgb(27, 64, 103);
+  width: 7rem;
+  border: none;
+  border-bottom: 0.1rem solid rgb(217, 217, 217);
+  padding: .25rem;
+  outline: none;
+}
+
+select {
+  font-size: 1rem;
+  color: rgb(27, 64, 103);
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+}
+
+select:hover,.input:hover  {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .main {
+    margin: -15rem 8rem;
+  }
+  .main_currency {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main {
+    margin: -15rem auto;
+  }
+  img {
+    width: 7rem;
+    margin-top: 2.5rem;
+  }
+
 }
