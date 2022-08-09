@@ -28,7 +28,6 @@ function App() {
     fetch(URL)
       .then(res => res.json())
       .then(data => {
-        console.log(data)
         const currency1 = options.map(cur => cur)
         setFromCurrency(data.base)
         setToCurrency(currency1[0])
